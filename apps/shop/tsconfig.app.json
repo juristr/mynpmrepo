@@ -21,7 +21,14 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    
+    /* Path mappings */
+    "paths": {
+      "@packages/orders": ["../../packages/orders/src/index.ts"],
+      "@packages/products": ["../../packages/products/src/index.ts"],
+      "@packages/ui": ["../../packages/ui/src/index.ts"]
+    }
   },
   "include": ["src"]
 }
