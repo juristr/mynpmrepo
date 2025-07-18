@@ -1,0 +1,11 @@
+{
+  "name": "@mynpmrepo/source",
+  "description": "Source code for NPM example workspace",
+  "private": true,
+  "author": "Juri Strumpflohner",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
