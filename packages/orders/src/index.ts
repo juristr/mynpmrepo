@@ -35,3 +35,6 @@ export function calculateOrderTotal(items: OrderItem[]): number {
 function generateOrderId(): string {
   return `ORDER-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
 }
+
+export { OrderList } from './components/OrderList';
+export { OrderForm } from './components/OrderForm';

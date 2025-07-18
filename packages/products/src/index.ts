@@ -39,3 +39,6 @@ export function isInStock(product: Product): boolean {
 function generateProductId(): string {
   return `PROD-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
 }
+
+export { ProductList } from './components/ProductList';
+export { ProductForm } from './components/ProductForm';
