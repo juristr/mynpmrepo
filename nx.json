@@ -2,13 +2,14 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
     "build": {
-      "dependsOn": [
-        "^build"
-      ],
+      "dependsOn": ["^build"],
       "cache": true
     },
     "lint": {
       "cache": true
+    },
+    "preview": {
+      "continuous": true
     }
   },
   "plugins": [
@@ -24,6 +25,12 @@
         "typecheckTargetName": "typecheck",
         "buildDepsTargetName": "build-deps",
         "watchDepsTargetName": "watch-deps"
+      }
+    },
+    {
+      "plugin": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
       }
     }
   ]
