@@ -2,9 +2,24 @@
   "name": "@mynpmrepo/shop-e2e",
   "version": "0.0.1",
   "private": true,
-  "nx": {
+  "scripts": {
+    "e2e": "playwright test"
+  },
+  "nxx": {
     "implicitDependencies": [
       "@mynpmrepo/shop"
-    ]
+    ],
+    "targets": {
+      "e2ex": {
+        "dependsOn": [
+          {
+            "projects": [
+              "@mynpmrepo/shop"
+            ],
+            "target": "preview"
+          }
+        ]
+      }
+    }
   }
 }
