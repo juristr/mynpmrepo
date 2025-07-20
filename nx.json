@@ -1,16 +1,9 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "targetDefaults": {
-    "build": {
-      "dependsOn": ["^build"],
-      "cache": true
-    },
-    "lint": {
-      "cache": true
-    },
-    "preview": {
-      "continuous": true
-    }
+    "build": { "dependsOn": ["^build"], "cache": true },
+    "lint": { "cache": true },
+    "preview": { "continuous": true }
   },
   "plugins": [
     {
@@ -27,12 +20,7 @@
         "watchDepsTargetName": "watch-deps"
       }
     },
-    {
-      "plugin": "@nx/playwright/plugin",
-      "options": {
-        "targetName": "e2e"
-      }
-    },
+    { "plugin": "@nx/playwright/plugin", "options": { "targetName": "e2e" } },
     {
       "plugin": "@nx/react/router-plugin",
       "options": {
@@ -44,5 +32,6 @@
         "typecheckTargetName": "typecheck"
       }
     }
-  ]
+  ],
+  "nxCloudId": "687ce43e33566c0ed7495010"
 }
