@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Button, Card } from '@packages/ui';
 import { ProductList, ProductForm, createProduct } from '@packages/products';
 import type { Product } from '@packages/products';
-import { OrderList, OrderForm, createOrder } from 'orders';
-import type { Order, OrderItem } from 'orders';
+import { OrderList, OrderForm, createOrder } from '@packages/orders';
+import type { Order, OrderItem } from '@packages/orders';
 import './App.css';
 
 function App() {
